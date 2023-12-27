@@ -4,6 +4,7 @@ public class Unary {
         //int b = --a; output is 6
         //kjkvjfk
         int b = a--;
+        
         System.out.println(b);//7
     
     }

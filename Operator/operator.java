@@ -5,5 +5,8 @@ public class operator {
         System.out.println(A+B);
         System.out.println(A/B);
         System.out.println(A*B);
+        System.out.println(A%B);
+        System.out.println(A-B);
+        
     }
 }
