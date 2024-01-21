@@ -8,7 +8,7 @@ public class fibonnaci {
         // if(n == 1){
         //     return 1;
         // }
-        if(n == 0 || n ==1){
+        if(n == 0 || n ==1){//write like this
             return n;
         }
         int fbnm1 = fibo(n - 1);

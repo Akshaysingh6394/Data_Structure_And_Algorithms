@@ -2,7 +2,7 @@ package Recursion;
 
 public class lastOccc {
     public static int lastOccurance(int arr[] , int key, int i){
-        if(i == arr.length){
+        if(i == arr.length){//out of array length
             return -1;
         }
         int isFound = lastOccurance(arr, key, i+1);

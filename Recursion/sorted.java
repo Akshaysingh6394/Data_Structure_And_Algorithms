@@ -5,7 +5,7 @@ public class sorted {
         if(i == arr.length - 1){
             return true;
         }
-        if(arr[i] > arr[i+1]){
+        if(arr[i] > arr[i+1]){// check this
             return false;
         }
         return isSorted(arr, i+1);
