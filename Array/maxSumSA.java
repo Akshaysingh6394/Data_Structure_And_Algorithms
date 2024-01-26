@@ -1,15 +1,15 @@
 public class maxSumSA {
     public static void maxSumSubArray(int num[]){
         int max = Integer.MIN_VALUE;
-        //int CS = 0;
+        int CS = 0;
 
         for (int i = 0; i < num.length; i++) {
             for (int j = i; j < num.length; j++) {
-                int CS = 0;
+                CS = 0;
                 for (int j2 = i; j2 <= j; j2++) {
                     CS += num[j2];   
                 }
-                System.out.print(CS+" ");
+                System.out.println(CS+" ");
                 if(CS>max){
                     max = CS;
                 }
@@ -17,7 +17,7 @@ public class maxSumSA {
             }
             
         }
-        System.out.println(max);
+        System.out.println("Maximum sum is"+" "+max);
     }
     public static void main(String[] args) {
         int num[] = {2,3,1,4,7,9};
