@@ -14,7 +14,7 @@ public class create {
         list.set(2, 9);
         System.out.println(list);
         
-       //hello 
+       //helo 
        //hey
        //HEllo
     }
