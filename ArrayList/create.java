@@ -6,7 +6,7 @@ public class create {
         ArrayList <Integer> list = new ArrayList<>();
         list.add(2);
         list.add(3);
-        list.add(6);
+        list.add(7);
         System.out.println(list);
         list.remove(2);
         System.out.println(list);
