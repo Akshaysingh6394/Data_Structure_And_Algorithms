@@ -1,6 +1,6 @@
 public class linearSearch {
     public static int linearSearc(int numbers[], int key){
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {// REACH EVERY ELEMENT
             if(numbers[i]==key){
                 return i;
             }
