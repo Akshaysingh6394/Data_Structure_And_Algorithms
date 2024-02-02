@@ -12,6 +12,7 @@ public class create {
         System.out.println(list);
         System.out.println(list.get(1));
         list.set(2, 9);
+        list.set(3,13);
         System.out.println(list);
         
        //helo 
