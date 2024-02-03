@@ -14,6 +14,7 @@ public class max {
                 max = list.get(i);
 
             }
+        //max =  Math.max(max,list.get(i));
             
         }
         System.out.println(max);
