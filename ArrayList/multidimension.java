@@ -21,7 +21,7 @@ public class multidimension{
                 System.out.print(currList.get(j) +" ");
                 
             }
-            System.out.println();
+            System.out.println();//multidimension form
             
         }
     }
