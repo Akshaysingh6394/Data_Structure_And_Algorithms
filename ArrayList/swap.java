@@ -29,6 +29,6 @@ public class swap {
         swap(list,idx1,idx2);
         System.out.println(list);
 
-    }
+    }  
     
 }
