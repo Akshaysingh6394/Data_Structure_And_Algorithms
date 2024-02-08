@@ -26,7 +26,7 @@ public class RainwaterTrapping {
             }
         }
 
-        return trappedWater;
+        return trappedWater; // return total trapped water
     }
 
     public static void main(String[] args) {
