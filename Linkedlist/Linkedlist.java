@@ -12,6 +12,7 @@ public class Linkedlist{
         Linkedlist l1 = new Linkedlist();
         l1.head = new Node(1);
         li.head.Next = new Node(2);
+        // new 
         
         
     }
