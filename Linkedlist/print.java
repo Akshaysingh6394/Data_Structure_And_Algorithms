@@ -1,4 +1,4 @@
-public class print {
+public class print {//print
     public void print(){
         if(head == null){
             System.out.println("Empty");
