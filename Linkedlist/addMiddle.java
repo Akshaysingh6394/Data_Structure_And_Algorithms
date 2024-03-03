@@ -1,4 +1,4 @@
-public class addMiddle {
+public class addMiddle {// addMiddle Method
     public void addMiddle(int idx , int data){
         Node newNode = new Node(data);
         if(idx == 0){
