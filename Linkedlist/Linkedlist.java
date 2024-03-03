@@ -27,7 +27,7 @@ public class Linkedlist{
             return;
         }
         tail.Next = newNode;
-        tail = newNode.Next;
+        tail = newNode;
     }
     public void print(){
         if(head == null){
