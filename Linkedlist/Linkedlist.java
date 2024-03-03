@@ -29,6 +29,22 @@ public class Linkedlist{
         tail.Next = newNode;
         tail = newNode;
     }
+    public void addMiddle(int idx , int data){
+        Node newNode = new Node(data);
+        if(idx == 0){
+            addFirst(data);
+            return;
+        }
+        Node temp = head;
+        int i = 0;
+        while(i < idx-1){
+            temp = temp.Next;
+            i++;
+        }
+        newNode.Next = temp.Next;
+        temp.Next = newNode;
+
+    }
     public void print(){
         if(head == null){
             System.out.println("Empty");
@@ -45,13 +61,17 @@ public class Linkedlist{
     public static void main(String[] args) {
         Linkedlist l1 = new Linkedlist();
         l1.print();
+        l1.addFirst(2);
+        l1.print();
         l1.addFirst(1);
         l1.print();
-        l1.addFirst(2);
+        l1.addMiddle(2, 9);
         l1.print();
         l1.addLast(3);
         l1.print();
         l1.addLast(4);
+        l1.print();
+        l1.addMiddle(4, 11);
         l1.print();
        
         
