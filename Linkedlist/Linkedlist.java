@@ -62,22 +62,40 @@ public class Linkedlist{
         }
         System.out.println();
     }
+    public int removeFirst(){
+        if(size == 0) {
+            System.out.println("Empty");
+            return Integer.MIN_VALUE;      
+        }else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.Next;
+        size--;
+        return val;
+    }
     public static void main(String[] args) {
         Linkedlist l1 = new Linkedlist();
-        l1.print();
+       // l1.print();
         l1.addFirst(2);
-        l1.print();
+       // l1.print();
         l1.addFirst(1);
-        l1.print();
+       // l1.print();
       
         
         l1.addLast(3);
-        l1.print();
+       // l1.print();
         l1.addLast(4);
-        l1.print();
+       // l1.print();
         l1.addMiddle(4, 11);
-        l1.print();
+       // l1.print();
         l1.addMiddle(2, 9);
+       // l1.print();
+        System.out.println(l1.size);
+        l1.removeFirst();
         l1.print();
         System.out.println(l1.size);
        
