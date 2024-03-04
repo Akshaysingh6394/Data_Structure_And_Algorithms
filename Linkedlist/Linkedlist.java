@@ -65,13 +65,15 @@ public class Linkedlist{
         l1.print();
         l1.addFirst(1);
         l1.print();
-        l1.addMiddle(2, 9);
-        l1.print();
+      
+        
         l1.addLast(3);
         l1.print();
         l1.addLast(4);
         l1.print();
         l1.addMiddle(4, 11);
+        l1.print();
+        l1.addMiddle(2, 9);
         l1.print();
        
         
