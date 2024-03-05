@@ -98,6 +98,18 @@ public class Linkedlist{
         size --;
         return val;
     }
+    public int itrSearch(int key){
+        Node temp  = head;
+        int i = 0;
+        while(temp != null){
+            if(temp.data == key){
+                return i;
+            }
+            temp = temp.Next;
+            i++;
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         Linkedlist l1 = new Linkedlist();
        // l1.print();
@@ -122,6 +134,9 @@ public class Linkedlist{
         l1.removeLast();
         l1.print();
         System.out.println(l1.size);
+        System.out.println(l1.itrSearch(9));
+        System.out.println(l1.itrSearch(15));
+
        
         
         
