@@ -1,4 +1,4 @@
-package Copy Constructor;
+package CopyConstructor;
 
 public class Fruit  
 {  
