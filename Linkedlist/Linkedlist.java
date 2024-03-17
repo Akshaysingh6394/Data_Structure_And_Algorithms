@@ -110,6 +110,93 @@ public class Linkedlist{
         }
         return -1;
     }
+    public int helper(Node head,int key){
+        if(head == null){
+            return -1;
+        }
+        if(head.data == key){
+            return 0 ;
+        }
+        int idx = helper(head.Next, key);
+        if(idx == -1){
+            return -1;
+        }
+        return idx+1;
+    }
+    public int recursionSearch(int key){
+        return helper(head, key);
+
+    }
+    public void reverseLL(){
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+        while(curr != null){
+            next = curr.Next;
+            curr.Next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+
+    }
+    public void delNthNodeEndSide(int n){
+        int sz = 0;
+        Node temp = head;
+        while(temp != null){
+            temp = temp.Next;
+            sz++;
+        }
+        if(n == sz){
+            head = head.Next;
+            return;
+        }
+        int i = 1;
+        int iToFind = sz-n;
+        Node prev = head;
+        while(i<iToFind){
+            prev = prev.Next;
+            i++;
+        }
+        prev.Next = prev.Next.Next;
+        return;
+    }
+    public Node findMid(Node head){
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.Next != null){
+            slow = slow.Next;
+            fast = fast.Next.Next;
+        }
+        return slow;
+    }
+    public boolean checkPalindrome(){
+        if(head == null || head.Next == null){
+            return true;
+        }
+        Node midNode = findMid(head);
+        
+        Node prev = null;
+        Node curr = midNode;
+       // Node next;
+        while(curr != null){
+           Node next = curr.Next;
+            curr.Next = prev;
+            prev = curr;
+            curr = next;
+
+        }
+        Node right = prev;
+        Node left = head;
+        while(right!=null){
+            if(left.data != right.data){
+                return false;
+            }
+            left = left.Next;
+            right = right.Next;
+        }
+        return true;
+    }
     public static void main(String[] args) {
         Linkedlist l1 = new Linkedlist();
        // l1.print();
@@ -121,21 +208,28 @@ public class Linkedlist{
         
         l1.addLast(3);
        // l1.print();
-        l1.addLast(4);
+        l1.addLast(2);
        // l1.print();
-        l1.addMiddle(4, 11);
+        l1.addMiddle(4, 1);
        // l1.print();
         l1.addMiddle(2, 9);
        // l1.print();
-        System.out.println(l1.size);
-        l1.removeFirst();
+        //System.out.println(l1.size);
+        //l1.removeFirst();
         l1.print();
-        System.out.println(l1.size);
-        l1.removeLast();
-        l1.print();
-        System.out.println(l1.size);
-        System.out.println(l1.itrSearch(9));
-        System.out.println(l1.itrSearch(15));
+       // System.out.println(l1.size);
+        //l1.removeLast();
+       // l1.print();
+        //System.out.println(l1.size);
+       // System.out.println(l1.itrSearch(9));
+        //System.out.println(l1.itrSearch(15));
+      //  System.out.println(l1.recursionSearch(11));
+      //l1.reverseLL();
+      //l1.print();
+      l1.delNthNodeEndSide(4);
+      l1.print();
+      System.out.println(l1.checkPalindrome());
+      
 
        
         
