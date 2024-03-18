@@ -1,7 +1,7 @@
 import org.w3c.dom.Node;
 
 public class checkPalin {
-     public Node findMid(Node head){
+     public Node findMid(Node head){// find mid node
         Node slow = head;
         Node fast = head;
         while(fast != null && fast.Next != null){
