@@ -44,7 +44,7 @@ public class Diamond {
         } 
     } 
     public static void main(String[] args) {
-        printDiamond(5);
+        printDiamond(6);
     }
       
     
