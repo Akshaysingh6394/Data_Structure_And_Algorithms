@@ -1,11 +1,12 @@
 package Function;
 
 public class basic {
-    public static void printHello(){
-        System.out.println("Hellow world");
+    public static void product(int a,int b){
+        int product = a*b;
+        System.out.println(product);
     }
     public static void main(String[] args) {
-        printHello();
+        product(2, 3);
     }
     
 }
