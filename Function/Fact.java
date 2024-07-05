@@ -9,8 +9,16 @@ public class Fact {
         }
         return f;
     }
+    public static int binocoff(int n , int r){
+        int a = factorial(n);
+        int b = factorial(r);
+        int c = factorial(n-r);
+        int bc = a/(b*c);
+        return bc;
+    }
     public static void main(String[] args) {
-        System.out.println(factorial(5));
+        int BCF = binocoff(5, 2);
+        System.out.println(BCF);
     }
     
 }
