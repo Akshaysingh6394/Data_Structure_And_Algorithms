@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class revStr {
-    public static String reverseString(Sring str){
+    public static String reverseString(String str){
         Stack<Character> s = new Stack<>();
 
         int idx =0;
@@ -19,7 +19,7 @@ public class revStr {
     }
     public static void main(String[] args) {
         String str = "AKshay";
-        String result = reverseString(Str);
+        String result = reverseString(str);
         System.out.println(result);
     }
     
